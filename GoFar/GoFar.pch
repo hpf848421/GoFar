@@ -1,0 +1,28 @@
+//
+//  GoFar.pch
+//  GoFar
+//
+//  Created by 胡彭飞 on 16/3/11.
+//  Copyright © 2016年 hpf. All rights reserved.
+//
+
+#ifndef GoFar_pch
+#define GoFar_pch
+#define kSystemVersionMore7         ([[UIDevice currentDevice].systemVersion doubleValue]>=7.0)
+#define kSystemVersionMore8         ([[UIDevice currentDevice].systemVersion doubleValue]>=8.0)
+#define kSystemVersionMore9         ([[UIDevice currentDevice].systemVersion doubleValue]>=9.0)
+#define kSystemVersionMore10         ([[UIDevice currentDevice].systemVersion doubleValue]>=10.0)
+#define kSystemVersionMore11         ([[UIDevice currentDevice].systemVersion doubleValue]>=11.0)
+#define KscreenW [UIScreen mainScreen].bounds.size.width
+#define KscreenH [UIScreen mainScreen].bounds.size.height
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define HPcolor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#import "UIView+Extension.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+//login
+#define kLoginSuccessed @"loginSuccessed"
+#define kLoginFailed    @"loginFailed"
+#define kLoginCancelled @"loginCancelled"
+#endif /* GoFar_pch */
